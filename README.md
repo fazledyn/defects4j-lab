@@ -101,6 +101,14 @@ Steps to set up Defects4J
     - `git clone https://github.com/rjust/defects4j`
 
 2. Initialize Defects4J (download the project repositories and external libraries, which are not included in the git repository for size purposes and to avoid redundancies):
+
+   Install Perl related dependency:
+    - `sudo apt-get install libdbi-perl`
+   
+   Install `cpanm` using the commands below:
+    - `perl -MCPAN -e shell`
+    - `install App::cpanminus`
+   
    If you do not have `cpanm` installed, use cpan or a cpan wrapper to install the perl modules listed in `cpanfile`.
     - `cd defects4j`
     - `cpanm --installdeps .`
